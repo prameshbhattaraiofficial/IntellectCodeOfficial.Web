@@ -11,7 +11,7 @@ namespace IntellectCodeofficial.API.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        private readonly IConfiguration _Configuration;
+        /*private readonly IConfiguration _Configuration;
         private readonly UserManager<IdentityRole> _UserManager;
         private readonly SignInManager<IdentityUser> _SignInManager;
         private readonly RoleManager<IdentityRole> _RoleManager;
@@ -60,7 +60,7 @@ namespace IntellectCodeofficial.API.Controllers
                     new Response { Status = "Error", Message = "User Failed to Create" }
                 );
             }
-
+*/
 
 
             /* var userExist = await _UserManager.FindByEmailAsync(registerUser.Email);
@@ -92,7 +92,7 @@ namespace IntellectCodeofficial.API.Controllers
                  return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User Failed to Create" });
              }*/
 
-        }
+       // }
 
     }
 }

@@ -10,15 +10,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 #region Database Connection
 
-builder.Services.AddDbContext<ApplicationDbContext>(option =>
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+/*builder.Services.AddDbContext<ApplicationDbContext>(option =>
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));*/
 
 #endregion
 
 #region Identity
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+/*builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
+    .AddDefaultTokenProviders();*/
 #endregion
 
 
